@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador de Viaje - Thailand26</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✈️ Planificador de Viaje</h1>
+            <p class="subtitle">Organiza tu viaje de manera fácil y rápida</p>
+        </header>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="day-filter">Filtrar por día:</label>
+                <select id="day-filter">
+                    <option value="all">Todos los días</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="type-filter">Filtrar por tipo:</label>
+                <select id="type-filter">
+                    <option value="all">Todos los tipos</option>
+                    <option value="hotel">🏨 Hotel</option>
+                    <option value="plane">✈️ Avión</option>
+                    <option value="bus">🚌 Autobús</option>
+                    <option value="tour">🎯 Tour</option>
+                </select>
+            </div>
+
+            <button id="clear-filters" class="btn-clear">Limpiar filtros</button>
+        </div>
+
+        <div id="activities-container" class="activities-container">
+            <!-- Las actividades se cargarán aquí dinámicamente -->
+        </div>
+
+        <div id="no-results" class="no-results" style="display: none;">
+            <p>No se encontraron actividades con los filtros seleccionados.</p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
